@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<html>
+<html ng-app="app">
     <!--Useful Links-->
     <!--https://christianheilmann.com/2015/04/08/keeping-it-simple-coding-a-carousel/-->
     <!--End Useful Links-->
-    
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,23 +14,23 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body ng-app="app">
+    <body>
 
-<!--        <section id="banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                    <img src="images/Banner_01.png" class="img-responsive" alt="FBCCI Banner" />
+        <!--        <section id="banner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                            <img src="images/Banner_01.png" class="img-responsive" alt="FBCCI Banner" />
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>-->
+                </section>-->
         <nav class="navbar navbar-default">
             <div class="container">
                 <!--Top Banner-->
                 <img src="images/Banner_01.png" class="img-responsive top-banner" alt="FBCCI Banner" />
                 <!--End top banner-->
-                
+
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fbcci-navbar-collapse-1" aria-expanded="false">
@@ -69,20 +69,57 @@
         <!--End of Navbar-->
 
         <!--Slider starts here-->
-        
-        
-        
-        
+                <div ng-controller="CarouselCtrl">
+                    <div class="container">
+                        <div style="height: 305px">
+                            <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                                <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                                    <img ng-src="{{slide.image}}" style="margin:auto;">
+                                    <div class="carousel-caption">
+                                        <h4>Slide {{slide.id}}</h4>
+                                        <p>{{slide.text}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+<!--                        <div class="row">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
+                                <button type="button" class="btn btn-info" ng-click="randomize()">Randomize slides</button>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" ng-model="noWrapSlides">
+                                        Disable Slide Looping
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval">
+                                <br />Enter a negative number or 0 to stop the interval.
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+
+<!--        <div ng-controller="myctrl">
+            <h4>I am Angular js: {{alim}}</h4>
+        </div>-->
+
+
+
         <!--End of Sliders-->
-        
-        
+
+
         <!--Scripts-->
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/angular/angular.js"></script>
         <script src="js/angular/angular-ui-router.js"></script>
         <script src="js/angular/ui-bootstrap-tpls-2.5.0.js"></script>
+        <script src="js/angular/angular-animate.min.js"></script>
         <script src="js/angular/app.js"></script>
-        <!--<script src="js/angular/CarouselDemoCtrl.js"></script>-->
+        <script src="js/angular/CarouselCtrl.js"></script>
+        <!--<script src="js/angular/app.js"></script>-->
     </body>
 </html>
