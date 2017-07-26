@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 24, 2017, 2:47:35 PM
+    Author     : G.S. Alim
+*/
+
+.top-banner{
+    margin-bottom: 5px;
+    /*padding-bottom: 10px;*/
+}
+
+.fbcci-navbar{
+
+    background-image: linear-gradient(#00BCF6, #008FCC, #016AAC);
+
+    font-size: 13px;
+    padding-bottom: 0;
+
+    .fbcc-nav-form{
+        padding: 0 5px;
+
+        input,button{
+            height: 25px;
+            font-size: 12px;
+            border: 2px solid black;
+        }
+        button{
+            padding: 0 10px;
+            color: white;
+            font-weight: bold;
+            background-image: linear-gradient(#E4B100, #B18701, #AC8502);
+        }
+        /*        @media (min-width: 768px){
+                    input{
+                        width: import;
+                    }   
+                }*/
+    }
+
+    ul{
+        li{
+            height: 40px;            
+            border-right: 2px solid #61ABEA;
+            border-bottom: none;
+            a{
+                padding-top: 11px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .navbar-nav li a {
+        color: white;
+        font-weight: bold;
+    }
+    .navbar-nav li a:hover {
+        background-image: linear-gradient(#E4B100, #B18701, #AC8502);
+        color: white;
+    }
+}
+
