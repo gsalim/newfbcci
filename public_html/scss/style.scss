@@ -7,6 +7,18 @@ and open the template in the editor.
     Created on : Jul 24, 2017, 2:47:35 PM
     Author     : G.S. Alim
 */
+/*body{
+    background-color: #AC8502;
+}*/
+/*.container{
+    background-color: white;
+}*/
+.main-navbar{
+    margin-bottom: 5px;   
+    border-color: #FFF;
+    /*border-color: #AC8502;*/
+    /*background-color: #AC8502;*/
+}
 
 .top-banner{
     margin-bottom: 5px;
@@ -14,8 +26,8 @@ and open the template in the editor.
 }
 
 .fbcci-navbar{
-
     background-image: linear-gradient(#00BCF6, #008FCC, #016AAC);
+    -webkit-box-shadow: 0 1px 2px #016AAC;
 
     font-size: 13px;
     padding-bottom: 0;
@@ -62,3 +74,39 @@ and open the template in the editor.
     }
 }
 
+/*https://css-tricks.com/examples/hrs/*/
+/*https://css-tricks.com/almanac/properties/b/box-shadow/*/
+.carousel-inner{
+    .item{
+        &::after{
+            /*background-image: url('../images/shadow-border.png');*/
+            content: "";
+            display: block;
+            height: 50px;
+            width: 100%;
+            background-color: #D2D2D2;
+            /*background: linear-gradient(0deg, grey 10%, white);*/
+            position: absolute;
+            /*top: 0;*/
+            left: 0;
+            bottom:0;
+            /*background: -webkit-gradient(linear, 50% 0%, 50% 50%, color-stop(0%, darkgrey), color-stop(100%, lightgrey));*/
+        }
+    }
+}
+
+.carousel-indicators{
+
+    padding: 0;
+    margin-bottom: 5px;
+    bottom: 0px;
+
+    li.active{
+        background-color: #AC8502;
+    }
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+}

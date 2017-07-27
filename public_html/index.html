@@ -25,7 +25,7 @@
                         </div>
                     </div>
                 </section>-->
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default main-navbar">
             <div class="container">
                 <!--Top Banner-->
                 <img src="images/Banner_01.png" class="img-responsive top-banner" alt="FBCCI Banner" />
@@ -71,14 +71,14 @@
         <!--Slider starts here-->
                 <div ng-controller="CarouselCtrl">
                     <div class="container">
-                        <div style="height: 305px">
+                        <div style="height: 350px">
                             <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
                                 <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
                                     <img ng-src="{{slide.image}}" style="margin:auto;">
-                                    <div class="carousel-caption">
+<!--                                    <div class="carousel-caption">
                                         <h4>Slide {{slide.id}}</h4>
                                         <p>{{slide.text}}</p>
-                                    </div>
+                                    </div>-->
                                 </div>
                             </div>
                         </div>
@@ -114,12 +114,16 @@
         <!--Scripts-->
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+
+        <!--Angular Library-->
         <script src="js/angular/angular.js"></script>
         <script src="js/angular/angular-ui-router.js"></script>
         <script src="js/angular/ui-bootstrap-tpls-2.5.0.js"></script>
         <script src="js/angular/angular-animate.min.js"></script>
+
+        <!--Project JS-->
         <script src="js/angular/app.js"></script>
         <script src="js/angular/CarouselCtrl.js"></script>
-        <!--<script src="js/angular/app.js"></script>-->
+
     </body>
 </html>
