@@ -71,7 +71,7 @@
         <!--Slider starts here-->
         <div ng-controller="CarouselCtrl">
             <div class="container">
-                <div style="height: 350px">
+                <div>
                     <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
                         <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
                             <img ng-src="{{slide.image}}" style="margin:auto;">
@@ -83,35 +83,22 @@
                     </div>
                 </div>
 
-                <!--                        <div class="row">
-                                            <div class="col-md-6">
-                                                <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
-                                                <button type="button" class="btn btn-info" ng-click="randomize()">Randomize slides</button>
-                                                <div class="checkbox">
-                                                    <label>
-                                                        <input type="checkbox" ng-model="noWrapSlides">
-                                                        Disable Slide Looping
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval">
-                                                <br />Enter a negative number or 0 to stop the interval.
-                                            </div>
-                                        </div>-->
+            </div>
+        </div>
+        <!--End of Sliders-->
+
+        <div class="container">
+            <div class="carousel-btn text-center">
+                <button type="button" class="btn btn-default btn-sm">CIRCULAR</button>
+                <button type="button" class="btn btn-default btn-sm">NOTICE</button>
+                <button type="button" class="btn btn-default btn-sm">OUR PARTNERS</button>
             </div>
         </div>
 
-        <!--        <div ng-controller="myctrl">
-                    <h4>I am Angular js: {{alim}}</h4>
-                </div>-->
 
-
-        <!--End of Sliders-->
 
 
         <!--Footer-->
-
         <div class="container">
             <div class="copyright">
                 <div class="col-md-6">
@@ -128,7 +115,6 @@
             </div>
         </div>
         <!--End Footer-->
-
 
         <!--Scripts-->
         <script src="js/jquery-3.2.1.min.js"></script>

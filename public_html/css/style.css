@@ -94,6 +94,22 @@ and open the template in the editor.
   background-color: #AC8502;
 }
 
+.carousel-btn {
+  /*height: 70px;*/
+  /*background: darkgrey;*/
+  background-image: linear-gradient(#5A5F65, #AAAFB5 20%, #AAAFB5);
+}
+.carousel-btn button {
+  background-image: linear-gradient(#00BCF6, #008FCC, #016AAC);
+  margin: 15px 0;
+  width: 130px;
+  color: white;
+}
+.carousel-btn button:hover {
+  background-image: linear-gradient(#E4B100, #B18701, #AC8502);
+  color: white;
+}
+
 .carousel-control.left,
 .carousel-control.right {
   background-image: none;
