@@ -111,35 +111,35 @@ and open the template in the editor.
     background-image: none;
 }
 
-
 .copyright {
-    min-height:40px;
+    min-height: 40px;
     background-image: linear-gradient(#00BCF6, #008FCC, #016AAC);
+    font-size: 11px;
     p {
         text-align: left; 
         color: #FFF;
         padding: 10px 0;
-        margin-bottom: 0px;
+        /*margin-bottom: 0px;*/
     }
 }
 
 .bottom_ul {
-    list-style-type:none;
-    float:right;
-    margin-bottom:0px;
+    list-style-type: none;
+    float: right;
+    margin-bottom: 0px;
     
     li { 
-        float:left;
-        line-height:40px;
+        float: left;
+        line-height: 40px;
         &::after {
             content:"|";
             color:#FFF;
-            margin-right:8px;
-            margin-left:8px;
+            margin-right: 8px;
+            margin-left: 8px;
         }
         a {
             color: #FFF;
-            font-size: 12px;
+            /*font-size: 10px;*/
         }
     }
 }
