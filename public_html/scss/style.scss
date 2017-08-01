@@ -108,9 +108,13 @@ and open the template in the editor.
 /*https://stackoverflow.com/questions/27360375/how-to-align-list-items-with-font-awesome-icon-next-line-text/35357616#35357616*/
 .notice{
     margin-top: 40px;
-
+    margin-bottom: 100px;
+    padding-top: 20px;
+    padding-right: 20px;
+    
+    
     em, i {
-        margin-top: 2px;
+        margin-top: 1px;
         margin-right: 3px;
         float: left;
         color: green;
@@ -124,11 +128,15 @@ and open the template in the editor.
         font-size: 13px;
     }
 
-    margin-bottom: 100px;
+    /*margin-bottom: 100px;*/
+
+    box-shadow: 0 10px 50px -6px #777;
+
     /*border-bottom: 5px solid #AC8502;*/
     /*box-shadow: 0 8px 6px -6px black;*/
     /*background-image: linear-gradient(#00BCF6, #008FCC, #016AAC);*/
     /*box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px blue;*/
+    /*https://paulund.co.uk/learn-css-box-shadow*/
 }
 
 /*http://www.colorzilla.com/gradient-editor/*/
