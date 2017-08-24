@@ -13,6 +13,10 @@ and open the template in the editor.
 /*.container{
     background-color: white;
 }*/
+
+
+@import '_nested-submenu';
+
 .main-navbar{
     margin-bottom: 5px;   
     border-color: #FFF;
@@ -42,7 +46,7 @@ and open the template in the editor.
         }
         button{
             padding: 0 10px;
-            color: white;
+            /*color: white;*/
             font-weight: bold;
             background-image: linear-gradient(#E4B100, #B18701, #AC8502);
         }
@@ -73,6 +77,12 @@ and open the template in the editor.
         color: white;
     }
 }
+
+/*.dropdown-submenu > .dropdown-menu {
+    background: #00BCF6;
+}*/
+
+
 
 /*https://css-tricks.com/examples/hrs/*/
 /*https://css-tricks.com/almanac/properties/b/box-shadow/*/
@@ -111,8 +121,7 @@ and open the template in the editor.
     margin-bottom: 100px;
     padding-top: 20px;
     padding-right: 20px;
-    
-    
+
     em, i {
         margin-top: 1px;
         margin-right: 3px;

@@ -35,7 +35,6 @@ var app = angular.module('app', ['ui.router', 'ui.bootstrap', 'ngAnimate']);
 //        });
 //    }]);
 
-
 app.controller('myctrl', function ($scope) {
     $scope.alim = "1.1.6";
 });
