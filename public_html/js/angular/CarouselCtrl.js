@@ -6,24 +6,26 @@ angular.module('app').controller('CarouselCtrl', function ($scope) {
     var currIndex = 0;
 
 
-//    var slides = $scope.slides = [
-//        {image: 'Image001.png', description: ''}
-//    ];
+//    var slides = $scope.slides = [{image: 'images/sliders/DSC_0146.jpg', description: ''}];
 
     $scope.addSlide = function () {
-        var newWidth = 600 + slides.length + 1;
-        slides.push({
-            image: '//unsplash.it/' + newWidth + '/300',
-//            image: '//images/ny.jpg',
-            text: ['Nice image', 'Awesome photograph', 'That is so cool', 'I love that'][slides.length % 4],
-            id: currIndex++
-        });
-
+//        var newWidth = 600 + slides.length + 1;
 //        slides.push({
-//            image: 'images/img/010.jpg',
-//            text: 'Hello...',
+//            image: '//unsplash.it/' + newWidth + '/300',
+//            text: ['Nice image', 'Awesome photograph', 'That is so cool', 'I love that'][slides.length % 4],
 //            id: currIndex++
 //        });
+
+        slides.push({
+            image: 'images/sliders/DSC_0146.jpg',
+            text: '-',
+            id: currIndex++
+        });
+        slides.push({
+            image: 'images/sliders/DSC_0724.jpg',
+            text: '-',
+            id: currIndex++
+        });
 
     };
 
@@ -32,7 +34,7 @@ angular.module('app').controller('CarouselCtrl', function ($scope) {
 //        assignNewIndexesToSlides(indexes);
 //    };
 
-    for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < 2; i++) {
         $scope.addSlide();
     }
 
